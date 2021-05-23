@@ -6,10 +6,23 @@
         <link href="css/style.css" rel = "stylesheet" type="text/css">
     </head>
     <body>
-        <h1>Etch a Sketch</h1>
-        <div class="slider-container">
-            <input type= 'range' min="1" max="64" value="16" class="slider" id = "pixel-value">
-            <input type="color" value="#ff0000" class="color-picker">
+        <div class="top-container">
+            <div class="heading-container"><h1>Let the artist inside you loose!</h1></div>
+            <div class="options-container">
+                <div class="color-picker option-items">Color: 
+                    <label for="color-picker">
+                        <input type="color" value="#FF0000" id="color-picker">
+                    </label>
+                </div>
+                <div class="reset-container option-items"><button class="reset button">Reset</button></div>
+                <div class="rainbow-container option-items"><button class="rainbow button">Rainbow</button></div>
+                <div class="eraser-container option-items"><button class="eraser button">Eraser</button></div>
+                <div class="size-picker option-items">Pixel size: 
+                    <label for="size-picker">
+                        <input type="range" min = 1 max = 100 value = 85 id="size-picker">
+                    </label>
+                </div>
+            </div>
         </div>
         <div class="board-container"></div>
         <script src="script.js"></script>
