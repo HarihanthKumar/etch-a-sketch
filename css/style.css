@@ -1,0 +1,28 @@
+.board-container{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 390px;
+    outline: 1px solid black;
+}
+
+.color-picker{
+    width: 100px;
+    height: 50px;
+}
+
+@media screen and (min-width : 600px) {
+    .board-container{
+        width: 490px;
+        height: 490px;
+    }
+}
+
+@media screen and (min-width : 1000px) {
+    .board-container{
+        width: 750px;
+        height: 750px;
+    }
+}
